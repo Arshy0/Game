@@ -1,0 +1,15 @@
+ body {
+      font-family: 'Inter', sans-serif;
+      transition: all 0.3s ease;
+    }
+    .cell:not(.marked):hover {
+      background-color: rgba(0, 0, 0, 0.05);
+      transform: scale(1.03);
+    }
+    .cell.winner {
+      animation: pulse 1s infinite alternate;
+    }
+    @keyframes pulse {
+      0% { background-color: rgba(16, 185, 129, 0.1); }
+      100% { background-color: rgba(16, 185, 129, 0.3); }
+    }
